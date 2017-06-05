@@ -1,0 +1,20 @@
+/* 转载请保留版权信息：懒人图库 www.lanrentuku.com */
+body{background:#000;}
+#divv{
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+#div1{position:absolute;left: 0;right: 0;bottom: 0;top: 0;}
+#div1 a{position:absolute;top:0px;left:0px;color:#fff;font-weight:bold;padding:3px 6px;text-decoration: none;}
+#div1 a:hover{border:1px solid #eee;background:#000;border-radius:5px;text-decoration: none;}
+
+#divv img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	z-index: 9999;
+	transform: translate(-50%;-50%;);
+}
