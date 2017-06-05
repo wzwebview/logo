@@ -1,6 +1,6 @@
 var radius = 40;
 var dtr = Math.PI/180;
-var d=400;
+var d=4000;
 
 var mcList = [];
 var active = false;
@@ -8,7 +8,7 @@ var lasta = 1;
 var lastb = 1;
 var distr = true;
 var tspeed=2;
-var size=250;
+var size=200;
 
 var mouseX=0;
 var mouseY=0;
@@ -25,7 +25,7 @@ window.onload=function ()
 	
 	oDiv=document.getElementById('div1');
 	
-	aA=oDiv.getElementsByTagName('a');
+	aA=oDiv.getElementsByTagName('span');
 	
 	for(i=0;i<aA.length;i++)
 	{
@@ -41,26 +41,26 @@ window.onload=function ()
 	
 	positionAll();
 	
-	oDiv.onmouseover=function ()
-	{
-		active=true;
-	};
+	// oDiv.onmouseover=function ()
+	// {
+	// 	active=true;
+	// };
 	
-	oDiv.onmouseout=function ()
-	{
-		active=false;
-	};
+	// oDiv.onmouseout=function ()
+	// {
+	// 	active=false;
+	// };
 	
-	oDiv.onmousemove=function (ev)
-	{
-		var oEvent=window.event || ev;
+	// oDiv.onmousemove=function (ev)
+	// {
+	// 	var oEvent=window.event || ev;
 		
-		mouseX=oEvent.clientX-(oDiv.offsetLeft+oDiv.offsetWidth/2);
-		mouseY=oEvent.clientY-(oDiv.offsetTop+oDiv.offsetHeight/2);
+	// 	mouseX=oEvent.clientX-(oDiv.offsetLeft+oDiv.offsetWidth/2);
+	// 	mouseY=oEvent.clientY-(oDiv.offsetTop+oDiv.offsetHeight/2);
 		
-		mouseX/=5;
-		mouseY/=5;
-	};
+	// 	mouseX/=5;
+	// 	mouseY/=5;
+	// };
 	
 	setInterval(update, 30);
 };
